@@ -1,9 +1,9 @@
-import { Routes, Route } from "react-router-dom";
-import DashboardLayout from "@/layout/DashboardLayout";
-import EventsList from "@/pages/EventsList";
-import EventConfig from "@/pages/EventConfig";
-import TestPage from '@/pages/TestPage';
-import { ThemeProvider } from "@/components/theme-provider";
+import { Routes, Route } from 'react-router-dom'
+import DashboardLayout from '@/layout/DashboardLayout'
+import EventsList from '@/pages/EventsList'
+import EventConfig from '@/pages/EventConfig'
+import TestPage from '@/pages/TestPage'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const AppRoutes: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const AppRoutes: React.FC = () => {
         </Route>
       </Routes>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default AppRoutes;
+export default AppRoutes

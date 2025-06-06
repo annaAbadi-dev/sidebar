@@ -22,16 +22,15 @@
 // Current DashboardLayout.tsx
 // src/layout/DashboardLayout.tsx
 // src/layout/DashboardLayout.tsx
-import AppSidebar from "../components/Sidebar";
-import { Outlet } from "react-router-dom";
-import { SidebarProvider } from "@/components/ui/sidebar"; // <-- Add this import back
+import AppSidebar from '../components/Sidebar'
+import { Outlet } from 'react-router-dom'
+import { SidebarProvider } from '@/components/ui/sidebar' // <-- Add this import back
 
 const DashboardLayout: React.FC = () => {
   return (
     // Add the provider back as the top-level wrapper
     <SidebarProvider>
       <div className="flex h-screen bg-background w-full">
-
         {/* This wrapper div controls the sidebar's layout */}
         <div className="w-64 flex-shrink-0 border-r">
           <AppSidebar />
@@ -43,10 +42,9 @@ const DashboardLayout: React.FC = () => {
             <Outlet />
           </div>
         </main>
-        
       </div>
     </SidebarProvider>
-  );
-};
+  )
+}
 
-export default DashboardLayout;
+export default DashboardLayout

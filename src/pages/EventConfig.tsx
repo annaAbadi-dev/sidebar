@@ -1,22 +1,22 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import EventSetupPage from "@/components/EventSetupPage";
-import { useParams } from "react-router-dom";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import EventSetupPage from '@/components/EventSetupPage'
+import { useParams } from 'react-router-dom'
 import {
   AppBreadcrumb,
   type BreadcrumbSegmentDef,
-} from "../components/BreadCrumbs";
-import { Home as HomeIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+} from '../components/BreadCrumbs'
+import { Home as HomeIcon } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function EventConfig() {
-  const { id } = useParams();
+  const { id } = useParams()
   const breadcrumbSegments: BreadcrumbSegmentDef[] = [
-    { label: "Home", path: "/", icon: HomeIcon },
-    { label: "Programs", path: "/programs" },
-    { label: "Events" },
-    { label: "Configuration" },
+    { label: 'Home', path: '/', icon: HomeIcon },
+    { label: 'Programs', path: '/programs' },
+    { label: 'Events' },
+    { label: 'Configuration' },
     { label: `${id}` }, // Last item is automatically treated as current, no path needed
-  ];
+  ]
 
   return (
     <div className="px-4 sm:px-6 lg:px-8">
@@ -36,12 +36,11 @@ export default function EventConfig() {
             </TabsList>
 
             <div className="flex gap-2">
-              <Button variant={"black"}>Copy Registration</Button>
+              <Button variant={'black'}>Copy Registration</Button>
               <Button>Go Live</Button>
             </div>
           </div>
         </div>
-
         {/* SECTION 2: The content area */}
         <div className="mt-6">
           <TabsContent value="Overview">
@@ -62,5 +61,5 @@ export default function EventConfig() {
         </div>
       </Tabs>
     </div>
-  );
+  )
 }
