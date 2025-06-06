@@ -243,7 +243,7 @@ export default function EventSetupPage() {
         <ScrollArea className="flex-1 p-6 pb-12">
           {" "}
           {/* Main content scrolls, added more bottom padding */}
-          <div className="max-w-3xl mx-auto">
+          <div>
             {" "}
             {/* Optional: constrain width of form content */}
             <CurrentFormComponent />

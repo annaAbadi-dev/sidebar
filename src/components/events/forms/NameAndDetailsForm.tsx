@@ -56,18 +56,18 @@ export const NameAndDetailsForm: React.FC<NameAndDetailsFormProps> = ({ initialD
         <Label className="text-xs font-semibold text-muted-foreground mb-1 block">LANGUAGE OPTIONS</Label>
         <div className="flex w-min rounded-md border p-0.5 bg-muted/60">
           <Button
-            variant={data.language === 'EN' ? 'default' : 'ghost'}
+            variant='black'
             size="sm"
             onClick={() => handleChange('language', 'EN')}
-            className={`px-4 py-1 h-8 text-xs ${data.language === 'EN' ? 'bg-background shadow-sm' : 'shadow-none text-muted-foreground'}`}
+            className={` bg-black px-4 py-1 h-8 text-xs ${data.language === 'EN' ? 'shadow-sm' : 'shadow-none text-muted-foreground'}`}
           >
             English (EN)
           </Button>
           <Button
-            variant={data.language === 'FR' ? 'default' : 'ghost'}
+            variant='black'
             size="sm"
             onClick={() => handleChange('language', 'FR')}
-            className={`px-4 py-1 h-8 text-xs ${data.language === 'FR' ? 'bg-background shadow-sm' : 'shadow-none text-muted-foreground'}`}
+            className={` bg-black px-4 py-1 h-8 text-xs ${data.language === 'FR' ? 'shadow-sm' : 'shadow-none text-muted-foreground'}`}
           >
             French (FR)
           </Button>

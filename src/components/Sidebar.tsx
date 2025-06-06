@@ -27,7 +27,7 @@ const AppSidebar: React.FC = () => {
   const location = useLocation();
 
   return (
-    <Sidebar className="border-r h-screen">
+    <Sidebar className="w-64 flex-shrink-0 border-r h-screen bg-background">
       <SidebarHeader>
         <h2 className="text-lg font-semibold p-4">My App</h2>
       </SidebarHeader>
