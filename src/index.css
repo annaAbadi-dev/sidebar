@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -60,15 +60,13 @@ a:hover {
 }
 
 body {
- min-height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -78,7 +76,6 @@ h1 {
   a:hover {
     color: #747bff;
   }
- 
 }
 
 @theme inline {

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 import {
   Table,
   TableBody,
@@ -6,26 +6,29 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import { AppBreadcrumb, type BreadcrumbSegmentDef } from '../components/BreadCrumbs'
-import { Home as HomeIcon } from 'lucide-react';
+} from '@/components/ui/table'
+import {
+  AppBreadcrumb,
+  type BreadcrumbSegmentDef,
+} from '../components/BreadCrumbs'
+import { Home as HomeIcon } from 'lucide-react'
 
 const data = Array.from({ length: 10 }, (_, i) => ({
   id: 2300 + i,
-  name: "Demo AC Competition",
-  org: "Athletics Canada Event and Officials",
-  status: "Under Construction",
-  listing: "Off",
+  name: 'Demo AC Competition',
+  org: 'Athletics Canada Event and Officials',
+  status: 'Under Construction',
+  listing: 'Off',
   registrations: 179,
-}));
+}))
 
 export default function EventsList() {
-  const navigate = useNavigate();
- const breadcrumbSegments: BreadcrumbSegmentDef[] = [
+  const navigate = useNavigate()
+  const breadcrumbSegments: BreadcrumbSegmentDef[] = [
     { label: 'Home', path: '/', icon: HomeIcon },
     { label: 'Programs', path: '/programs' },
     { label: 'Events' }, // Last item is automatically treated as current, no path needed
-  ];
+  ]
   return (
     <div>
       <AppBreadcrumb segments={breadcrumbSegments} />
@@ -57,5 +60,5 @@ export default function EventsList() {
         </TableBody>
       </Table>
     </div>
-  );
+  )
 }
